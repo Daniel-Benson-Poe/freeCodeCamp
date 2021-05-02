@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            This is a comment, used to comment out code or to provide a more detailed explanation
+            of the given code.
+        <h1>Hello World!</h1>
+        -->
+        <title>Beginning HTML</title>
+    </head>
+
+    <body>
+        <!-- 
+            The href link below is used to import a google font, in this case the 
+            lobster font. 
+        -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> -->
+        <style>
+            .red-text {
+                color: red;
+            }
+
+            p {
+                font-size: 16px;
+                font-family: monospace
+            }
+
+            h2 {
+                font-family: Lobster;
+            }
+
+            .smaller-image {
+                width: 100px;
+            }
+
+            .thick-green-border {
+                border-color: green;
+                border-width: 10px;
+                border-style: solid;
+                border-radius: 50%;
+            }
+
+            .silver-background {
+                background-color: silver;
+            }
+
+            #cat-photo-form {
+                background-color: green;
+            }
+
+            [type='checkbox'] {
+                margin-top: 10px;
+                margin-bottom: 15px;
+            }
+        </style>
+
+        <h2 class="red-text">CatPhotoApp</h2>
+
+        <main>
+
+            <p class="red-text">View more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a></p>
+
+            <p>To point to an empty link (for cases in which you know you will want a link but 
+            do not yet know where the link will point to) replace the href attribute with the #
+            symbol: href="https..." is replaced with <a href="#" target="_blank">href="#"</a></p>
+
+            <a href="#footer">Jump to Bottom</a>
+
+            <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A relaxing cat"></a>
+
+            <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your 
+            ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the 
+            grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the
+            sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed 
+            everywhere stretching attack your ankles chase the red dot, hairball run catnip eat 
+            the grass sniff.</p>
+            
+            <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the 
+            couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed 
+            everywhere shed everywhere stretching attack your ankles chase the red dot, hairball 
+            run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched 
+            sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+            
+            <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner,
+            destroy all furniture, especially couch or lay on arms while you're using the keyboard. 
+            Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in 
+            doorway. Man running from cops stops to pet cats, goes to jail.</p>
+            
+            <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead
+            mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow 
+            to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over 
+            toy so purr for no reason. Meow to be let out play time intently sniff hand run outside 
+            as soon as door open yet destroy couch.</p>
+
+            <div class="silver-background"><p>Things cats love:</p>
+
+            <ul>
+                <li>Yarn</li>
+                <li>Catnip</li>
+                <li>Attention</li>
+                <li>To be left alone</li>
+            </ul>
+
+            <p>Top 3 things cats hate:</p>
+            <ol>
+                <li>Water</li>
+                <li>Dogs</li>
+                <li>Being held upside down</li>
+            </ol></div>
+
+            <input type="text" placeholder="Cat photo URL">
+
+            <form id="cat-photo-form" action="https://freecatphotoapp.com/submit-cat-photo">
+                <input type="text" required placeholder="Cat photo URL">
+                <button type="submit">Submit</button>
+
+                <label for="indoor"> <input id="indoor" value="indoor" type="radio" 
+                name="indoor-outdoor" checked>Indoor</label>
+
+                <label for="outdoor"> <input id="outdoor" value="outdoor" type="radio"
+                name="indoor-outdoor">Outdoor</label>
+
+                <label for="loving"><input id="loving" value="loving" type="checkbox"
+                name="personality" checked>Loving</label>
+
+                <label for="skittish"><input id="skittish" value="skittish" type="checkbox"
+                name="personality">Skittish</label>
+
+                <label for="lazy"><input id="lazy" value="lazy" type="checkbox"
+                name="personality">Lazy</label>
+                
+            </form>
+
+        </main>
+
+        <footer id="footer">Copyright Cat Photo App</footer
+    </body>
+</html>
