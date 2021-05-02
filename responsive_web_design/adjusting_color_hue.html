@@ -1,0 +1,38 @@
+<!-- hsl(): hue, saturation, lightness property used to pick
+a color in html.
+    
+Hue: it's what is thought of as color...hue is where 
+the color fits on the color wheel. Given as a number between
+0 and 360.
+
+Saturation: amount of gray in the color. Given as percent.
+
+Lightness: amount of black/white in the color. Given as percent.-->
+
+<style>
+  body {
+    background-color: #FFFFFF;
+  }
+
+  .green {
+    background-color: hsl(120, 100%, 50%);
+  }
+
+  .cyan {
+    background-color: hsl(180, 100%, 50%);
+  }
+
+  .blue {
+    background-color: hsl(240, 100%, 50%);
+  }
+
+  div {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+  }
+</style>
+
+<div class="green"></div>
+<div class="cyan"></div>
+<div class="blue"></div>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+
+    <style>
+    h2 {
+        position: relative;
+        left: 15px;
+        bottom: 10px;
+    }
+
+    #searchbar {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+
+    body {
+        min-height: 150vh;
+    }
+
+    #navbar {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        background-color: #767676;
+    }
+
+    nav ul {
+        margin: 0px;
+        padding: 5px 0px 5px 30px;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    #left {
+        float: left;
+        width: 50%;
+    }
+
+    #right {
+        float: right;
+        width: 40%;
+    }
+
+    aside, section {
+        padding: 2px;
+        background-color: #ccc;
+    }
+    </style>
+
+    <body>
+        <header>
+            <h1>On Being Well-Posititoned</h1>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <p>I shift up when the #navbar is fixed to the browser 
+        window.</p>
+        <section id="left">
+            <h2>Content</h2>
+            <p>Good stuff</p>
+        </section>
+        <aside id="right">
+            <h2>Sidebar</h2>
+            <p>Links</p>
+        </aside>
+        <h2>Move me!</h2>
+        <p>I still think the h2 is where it normally sits.</p>
+
+        <h1>Welcome!</h1>
+        <section>
+            <form id="searchbar">
+                <label for="search">Search:</label>
+                <input type="search" id="search" name="search">
+                <input type="submit" name="submit" value="Go!">
+            </form>
+        </section>
+    </body>
+
+
+</html>
